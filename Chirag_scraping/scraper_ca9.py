@@ -178,9 +178,7 @@ def get_indent(soup):
     indent_tag = soup.find_all(class_="indent")
     for i in indent_tag:
         try:
-            if "for appell" in i.get_text():
-                #print i
-                indent = i.get_text().encode('utf-8')
+            indent = i.get_text().encode('utf-8')
         except:
             print "Data not found"
 
